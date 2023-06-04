@@ -1,0 +1,16 @@
+<p>customer works!</p>
+<form (submit)="onSubmit()">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" [(ngModel)]="customer.name" required>
+
+  <label for="address">Address:</label>
+  <input type="text" id="address" name="address" [(ngModel)]="customer.address" required>
+
+  <label for="dob">Date of Birth:</label>
+  <input type="date" id="dob" name="dob" [(ngModel)]="customer.dob" required>
+
+  <label for="course">Course:</label>
+  <input type="text" id="course" name="course" [(ngModel)]="customer.course" required>
+
+  <button type="submit">Submit</button>
+</form>
